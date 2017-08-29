@@ -4,6 +4,7 @@
   "description": "A pure javascript JPEG encoder and decoder",
   "main": "index.js",
   "scripts": {
+    "lint": "node_modules/eslint/bin/eslint.js -c .eslintrc.js lib",
     "test": "node_modules/.bin/tape test/*.js"
   },
   "repository": {
@@ -25,7 +26,13 @@
   "bugs": {
     "url": "https://github.com/eugeneware/jpeg-js/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0"
+  },
   "devDependencies": {
     "prettier": "^1.6.0",
     "redtape": "~0.1.0",
